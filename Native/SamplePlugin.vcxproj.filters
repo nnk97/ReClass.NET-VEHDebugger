@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Resources">
+      <UniqueIdentifier>{593315aa-3e5c-44a1-9ee4-e358209e9a8c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Default callbacks">
+      <UniqueIdentifier>{eeebf4f4-030f-4942-b822-47992536a186}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shared files">
+      <UniqueIdentifier>{dafbabb1-2eb7-4d16-a6db-0c9f2829afe6}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="resource.h">
+      <Filter>Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="Main.hpp" />
+    <ClInclude Include="..\Shared\SharedMemory.hpp">
+      <Filter>Shared files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="SamplePluginNative.rc">
+      <Filter>Resources</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="exports.def">
+      <Filter>Resources</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="EnumerateProcess.cpp">
+      <Filter>Default callbacks</Filter>
+    </ClCompile>
+    <ClCompile Include="IsProcessValid.cpp">
+      <Filter>Default callbacks</Filter>
+    </ClCompile>
+    <ClCompile Include="OpenCloseRemoteProcess.cpp">
+      <Filter>Default callbacks</Filter>
+    </ClCompile>
+    <ClCompile Include="EnumerateRemoteSectionsAndModules.cpp">
+      <Filter>Default callbacks</Filter>
+    </ClCompile>
+    <ClCompile Include="ReadWriteRemoteMemory.cpp">
+      <Filter>Default callbacks</Filter>
+    </ClCompile>
+    <ClCompile Include="VEH_Debugger.cpp" />
+    <ClCompile Include="ControlRemoteProcess.cpp">
+      <Filter>Default callbacks</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
